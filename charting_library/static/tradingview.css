@@ -12,6 +12,31 @@
   /* top: 20px !important; */
 }
 
-.pane-legend-title__container.apply-overflow-tooltip.apply-overflow-tooltip--allow-text.apply-overflow-tooltip--check-children {
-  font-size: 12px;
+.pane-legend {
+  position: relative;
+  top: -2px;
+  color: rgb(90, 104, 129);
 }
+
+/* 交易对 */
+.pane-legend-title__container.apply-overflow-tooltip.apply-overflow-tooltip--allow-text.apply-overflow-tooltip--check-children {
+  font-size: 12px !important;
+  color: rgb(90, 104, 129) !important;
+  border-color: rgb(90, 104, 129) !important;
+  font-weight: normal;
+}
+
+.pane-legend-item-value-title {
+  font-size: 12px !important;
+  color: rgb(90, 104, 129) !important;
+}
+
+.pane-legend-item-value__main {
+  font-size: 12px !important;
+}
+
+.pane-legend-line.pane-legend-wrap.study > .pane-legend-line {
+  font-size: 12px !important;
+  color: rgb(90, 104, 129) !important;
+}
+

@@ -1389,9 +1389,9 @@ html.theme-dark .tv-close-panel{ border-color: #363c4e; }
   background-image: url(data:image/gif;base64,R0lGODlhBQADAIABAMnLzf///yH5BAEKAAEALAAAAAAFAAMAAAIFhB0XC1sAOw==);
 }
 html, body {
-  color: #292B42;
-  font-family: Montserrat, sans-serif !important;
-  font-size: 11.9px;
+  color: #4a4a4a;
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-size: 14px;
   height: 100% !important;
 }
 html.theme-dark html, html.theme-dark body{ color: #c5cbce; }
@@ -1474,9 +1474,9 @@ input, textarea, .selectable {
   height: 100% !important;
 }
 .chart-page {
-  background: transparent; /* modified by loopring */
+  background: #e7ebee;
 }
-html.theme-dark .chart-page{ background: transparent; } /* modified by loopring */
+html.theme-dark .chart-page{ background: #2f3241; }
 .chart-page .chart-container {
   position: relative;
   contain: strict;
@@ -1492,7 +1492,7 @@ html.theme-dark .chart-page{ background: transparent; } /* modified by loopring 
   /* workaround: enforce stacking context for webkit overflow with rounded border bug */
   z-index: 0;
 }
-html.theme-dark .chart-page .chart-container-border{ background-color: transparent; } /* modified by loopring */
+html.theme-dark .chart-page .chart-container-border{ background-color: #131722; }
 .chart-page .chart-container.multiple.active .chart-container-border {
   border-radius: 6px;
 }
@@ -1556,7 +1556,7 @@ html.theme-dark .chart-page .chart-container.multiple.active:after{ border-color
   top: 0;
   left: 0;
   z-index: 150;
-  background: transparent !important; /* modified by loopring */
+  background: #ffffff;
 }
 .loading-indicator img {
   position: absolute;
@@ -4509,7 +4509,7 @@ html.theme-dark .chart-data-window .chart-data-window-header .toggle-source-icon
   left: 5px;
   right: 5px;
   margin: 0;
-  padding: 0 0 0 10px; /* modified by loopring */
+  padding: 0;
   color: #4a4a4a;
   font-size: 0;
   line-height: normal;
@@ -4534,7 +4534,7 @@ html.theme-dark .pane-legend{ color: #c5cbce; }
 }
 .pane-legend .pane-legend-minbtn .expand, .pane-legend .pane-legend-icon .expand {
   position: relative;
-  display: none; /* modified by loopring */
+  display: inline-block;
   opacity: 0.999;
   margin: 0 3px 0 0;
   padding: 0;
@@ -4580,7 +4580,6 @@ html.theme-dark .pane-legend .pane-legend-minbtn .expand, html.theme-dark .pane-
   white-space: nowrap;
   text-overflow: ellipsis;
   min-width: 26px;
-  pointer-events: none; /* modified by loopring */
 }
 .pane-legend-line.pane-legend-wrap.study .pane-legend-item-value.disabled {
   display: none;
@@ -4602,26 +4601,24 @@ html.theme-dark .pane-legend .pane-legend-minbtn .expand, html.theme-dark .pane-
   vertical-align: middle;
   pointer-events: auto;
   display: inline-block;
-  pointer-events: none; /* modified by loopring */
 }
 .pane-legend-line span.pane-legend-line {
   margin: 0;
 }
 .pane-legend-line > span.pane-legend-line:not(.no-context-menu) {
-  margin-right: 0px /*!rtl:0*/; /* modified by loopring */
+  margin-right: 10px /*!rtl:0*/;
   /*!rtl:ignore*/
   margin-left: 0;
 }
 .pane-legend-line > span.pane-legend-line {
   position: relative;
   display: inline-block;
-  padding-left: 3px; /* modified by loopring */
-  padding-right: 6px; /* modified by loopring */
+  padding-right: 12px;
 }
 .pane-legend-line > span.pane-legend-line:not(.no-context-menu):before {
   content: '';
   position: absolute;
-  display: none; /* modified by loopring */
+  display: inline-block;
   top: 50%;
   right: 0;
   margin-top: -2px;
@@ -4678,7 +4675,8 @@ html.theme-dark .pane-legend .pane-legend-minbtn .expand, html.theme-dark .pane-
   position: relative;
 }
 .pane-legend-item-value-wrap .pane-legend-item-value, .pane-legend-item-value-wrap .pane-legend-item-value-title {
-  line-height: 19px; /* modified by loopring */
+  font-size: 9pt;
+  line-height: 19px;
 }
 .pane-legend-item-value-wrap .pane-legend-item-value__main, .pane-legend-item-value-wrap .pane-legend-item-value-title__main {
   font-size: 11pt;
@@ -4708,7 +4706,6 @@ html.theme-dark .pane-legend .pane-legend-minbtn .expand, html.theme-dark .pane-
   vertical-align: middle;
   cursor: default;
   pointer-events: none !important;
-  font-size: 11.9px!important; /* modified by loopring */
 }
 .pane-legend-item-additional {
   font-size: 9pt;
